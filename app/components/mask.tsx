@@ -215,7 +215,10 @@ function ContextPromptItem(props: {
   const [focusingInput, setFocusingInput] = useState(false);
 
   return (
-    <Draggable draggableId={props.prompt.id || props.index.toString()} index={props.index}>
+    <Draggable
+      draggableId={props.prompt.id || props.index.toString()}
+      index={props.index}
+    >
       {(provided) => (
         <div
           className={chatStyle["context-prompt-row"]}
@@ -458,7 +461,7 @@ export function MaskPage() {
               autoFocus
               onInput={(e) => onSearch(e.currentTarget.value)}
             />
-            <Select
+            {/* <Select
               className={styles["mask-filter-lang"]}
               value={filterLang ?? Locale.Settings.Lang.All}
               onChange={(e) => {
@@ -478,7 +481,7 @@ export function MaskPage() {
                   {ALL_LANG_OPTIONS[lang]}
                 </option>
               ))}
-            </Select>
+            </Select> */}
 
             <IconButton
               className={styles["mask-create"]}
