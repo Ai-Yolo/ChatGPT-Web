@@ -650,7 +650,7 @@ export function Settings() {
 
           {!accessStore.hideUserApiKey ? (
             <>
-              <ListItem
+              {/* <ListItem
                 title={Locale.Settings.Endpoint.Title}
                 subTitle={Locale.Settings.Endpoint.SubTitle}
               >
@@ -662,7 +662,7 @@ export function Settings() {
                     accessStore.updateOpenAiUrl(e.currentTarget.value)
                   }
                 ></input>
-              </ListItem>
+              </ListItem> */}
               <ListItem
                 title={Locale.Settings.Token.Title}
                 subTitle={Locale.Settings.Token.SubTitle}
@@ -705,7 +705,7 @@ export function Settings() {
             </ListItem>
           ) : null}
 
-          <ListItem
+          {/* <ListItem
             title={Locale.Settings.CustomModel.Title}
             subTitle={Locale.Settings.CustomModel.SubTitle}
           >
@@ -719,7 +719,7 @@ export function Settings() {
                 )
               }
             ></input>
-          </ListItem>
+          </ListItem> */}
         </List>
 
         <SyncItems />
