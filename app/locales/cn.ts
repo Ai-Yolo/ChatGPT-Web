@@ -7,8 +7,8 @@ const cn = {
   WIP: "该功能仍在开发中……",
   Error: {
     Unauthorized: isApp
-      ? "检测到无效 API Key，请前往[设置](/#/settings)页检查 API Key 是否配置正确。"
-      : "访问密码不正确或为空，请前往[登录](/#/auth)页输入正确的访问密码，或者在[设置](/#/settings)页填入你自己的 OpenAI API Key。",
+      ? "检测到无效令牌，请前往[设置](/#/settings)页检查令牌是否配置正确。"
+      : "令牌不正确或为空，请前往[设置](/#/settings)页输入正确的令牌。",
   },
   Auth: {
     Title: "需要密码",
@@ -215,19 +215,19 @@ const cn = {
       SubTitle: "当未压缩的历史消息超过该值时，将进行压缩",
     },
     Token: {
-      Title: "API Key",
-      SubTitle: "使用自己的 Key 可绕过密码访问限制",
-      Placeholder: "OpenAI API Key",
+      Title: "您的令牌",
+      SubTitle: "您在 Aikey.one 生成的令牌(非令牌名称)",
+      Placeholder: "请输入您的令牌",
     },
 
     Usage: {
       Title: "余额查询",
       SubTitle(used: any, total: any) {
-        return `本月已使用 $${used}，订阅总额 $${total}`;
+        return `已使用 ￥${used}，令牌余额 ￥${total}`;
       },
       IsChecking: "正在检查…",
       Check: "重新检查",
-      NoAccess: "输入 API Key 或访问密码查看余额",
+      NoAccess: "请输入您的令牌查看余额",
     },
     AccessCode: {
       Title: "访问密码",
