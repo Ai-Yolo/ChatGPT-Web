@@ -692,7 +692,7 @@ export function Settings() {
             </Popover>
           </ListItem>
 
-          <ListItem
+          {/* <ListItem
             title={Locale.Settings.Update.Version(currentVersion ?? "unknown")}
             subTitle={
               checkingUpdate
@@ -715,7 +715,7 @@ export function Settings() {
                 onClick={() => checkUpdate(true)}
               />
             )}
-          </ListItem>
+          </ListItem> */}
 
           <ListItem title={Locale.Settings.SendKey}>
             <Select
@@ -909,7 +909,7 @@ export function Settings() {
 
           {!accessStore.hideUserApiKey && (
             <>
-              <ListItem
+              {/* <ListItem
                 title={Locale.Settings.Access.CustomEndpoint.Title}
                 subTitle={Locale.Settings.Access.CustomEndpoint.SubTitle}
               >
@@ -923,10 +923,10 @@ export function Settings() {
                     )
                   }
                 ></input>
-              </ListItem>
+              </ListItem> */}
               {accessStore.useCustomConfig && (
                 <>
-                  <ListItem
+                  {/* <ListItem
                     title={Locale.Settings.Access.Provider.Title}
                     subTitle={Locale.Settings.Access.Provider.SubTitle}
                   >
@@ -946,11 +946,11 @@ export function Settings() {
                         </option>
                       ))}
                     </Select>
-                  </ListItem>
+                  </ListItem> */}
 
                   {accessStore.provider === "OpenAI" ? (
                     <>
-                      <ListItem
+                      {/* <ListItem
                         title={Locale.Settings.Access.OpenAI.Endpoint.Title}
                         subTitle={
                           Locale.Settings.Access.OpenAI.Endpoint.SubTitle
@@ -967,7 +967,7 @@ export function Settings() {
                             )
                           }
                         ></input>
-                      </ListItem>
+                      </ListItem> */}
                       <ListItem
                         title={Locale.Settings.Access.OpenAI.ApiKey.Title}
                         subTitle={Locale.Settings.Access.OpenAI.ApiKey.SubTitle}
